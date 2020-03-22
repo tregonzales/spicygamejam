@@ -239,9 +239,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   batController: {fileID: 4966141552323652130}
   degreesPerSecond: 720
-  accelerationRate: 100
-  maxSpeed: 1000
-  deccerlationRate: 0.1
+  accelerationRate: 5
+  maxSpeed: 30
+  deccerlationRate: 0.2
   camera: {fileID: 75805190}
   camSensitivity: 0.3
 --- !u!54 &4966141552346617861

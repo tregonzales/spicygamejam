@@ -55,22 +55,22 @@ public class PlayerController : MonoBehaviour
         Vector3 curSpeed = playerBody.velocity;
         bool keyPressed = false;
         if (Input.GetKey(KeyCode.W)){
-            curSpeed = curSpeed + new Vector3(0,0,accelerationRate);
+            curSpeed = curSpeed + playerTransform.forward*(accelerationRate);
             keyPressed = true;
             Debug.Log(curSpeed);
         }
         if (Input.GetKey(KeyCode.A)){
-            curSpeed = curSpeed + new Vector3(-1*accelerationRate,0,0);
+            curSpeed = curSpeed + playerTransform.right*(-1*accelerationRate);
             keyPressed = true;
             Debug.Log(curSpeed);
         }
         if (Input.GetKey(KeyCode.D)){
-            curSpeed = curSpeed + new Vector3(accelerationRate,0,0);
+            curSpeed = curSpeed + playerTransform.right*(accelerationRate);
             keyPressed = true;
             Debug.Log(curSpeed);
         }
         if (Input.GetKey(KeyCode.S)){
-            curSpeed = curSpeed + new Vector3(0,0,-1*accelerationRate);
+            curSpeed = curSpeed + playerTransform.forward*(-1*accelerationRate);
             keyPressed = true;
             Debug.Log(curSpeed);
         }
